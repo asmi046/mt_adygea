@@ -29,9 +29,9 @@
 
                 <div class=toyr_program>
 
-                    <tap :header="{{ json_encode(["06.02.2025", "08.03.2025"]) }}">
+                    <tap :header="{{ json_encode(["06.03.2025", "07.05.2025"]) }}">
                         <template v-slot:body1>
-                                @foreach ( config('lend_data.program')['06.02.2025'] as $step)
+                                @foreach ( config('lend_data.program')['06.03.2025'] as $step)
                                     <div class="step">
                                         <div class="point"></div>
                                         <span>{{$step}}</span>
@@ -40,7 +40,7 @@
                                 <div class="line"></div>
                         </template>
                         <template v-slot:body2>
-                            @foreach ( config('lend_data.program')['08.03.2025'] as $step)
+                            @foreach ( config('lend_data.program')['07.05.2025'] as $step)
                                     <div class="step">
                                         <div class="point"></div>
                                         <span>{{$step}}</span>
