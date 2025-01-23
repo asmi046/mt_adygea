@@ -66,7 +66,7 @@ return [
 
     ],
 
-    'in_price' => file_get_contents(public_path('lend_text/dop_price.html')),
+    'in_price' => file_get_contents(public_path('lend_text/in_price.html')),
     'dop_price' => file_get_contents(public_path('lend_text/dop_price.html')),
     'like_text' => "<p><strong>Адыгея</strong> — это бесконечный калейдоскоп живописных пейзажей, богатой истории и культуры. Откройте для себя всю красоту и величие потрясающей Адыгеи вместе с <strong>МирТуризма 46</strong>!</p>",
 ];
