@@ -3,7 +3,6 @@
     border-radius: 20px;
     border:1px solid $gray_border_color;
     display: flex;
-    width:70%;
     margin: 0 auto;
     overflow: hidden;
     .map {
@@ -69,6 +68,13 @@
 
 }
 
+#contacts {
+    .container {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
 @media (max-width:768px) {
@@ -88,5 +94,11 @@
             min-height: 200px;
         }
 
+    }
+
+    #contacts {
+        .container {
+            width: 96%;
+        }
     }
 }

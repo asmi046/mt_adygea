@@ -27,7 +27,6 @@
                 <p class="label label_white">от {{ config('lend_data.dey_count') }} дней</p>
 
 
-
                 <div class=toyr_program>
 
                     <tap :header="{{ json_encode(["06.02.2025", "08.03.2025"]) }}">
@@ -56,7 +55,7 @@
                 </div>
 
 
-                <a class="button yakor" href="#tours_content">Подробнее о туре</a>
+                <a class="button yakor" href="#program">Программа тура</a>
             </div>
 
             <div class="dop_param page_top_galery">
@@ -120,17 +119,10 @@
     <section id="program" class="program_section central_section">
         <div class="container">
             <h2>Ознакомьтесь с<br>программой тура в Адыгею</h2>
-            {{-- <a target="_blanck" class="download_btn" href="{{ asset('program/spb_2025.pdf')}}"><span>Скачать программу для <br>ознакомления в формате PDF</span></a> --}}
             <x-program></x-program>
         </div>
     </section>
 
-    <section id="location" class="location_section">
-        <div class="container">
-            <h2>Лучшие локации <br>Москвы</h2>
-            <x-locations></x-locations>
-        </div>
-    </section>
 
     <section id="philosophy" class="program_section central_section">
         <div class="container">
@@ -142,34 +134,29 @@
     <section id="in_tur" class="in_tur">
         <div class="container text_styles">
             <div class="wrapper" id="price_app">
-                <h2>Даты мероприятия:</h2>
+                <h2>Даты туров:</h2>
                 <ul>
-                    <li>05.01.2025</li>
+                    @foreach (config('lend_data.dates_list') as $item)
+                        <li>{{ $item }}</li>
+                    @endforeach
                 </ul>
 
 
-                <h2>В цену тура входит:</h2>
-                <ul>
-                    <li>Билеты на <strong>Кремлёвскую Ёлку 🎄</strong></li>
-                    <li>Cладкий подарок детям 🎁</li>
-                    <li>Проезд <strong>на комфортабельном автобусе 🚌</strong>  </li>
-                    <li>Транспортное обслуживание (автобус) <strong>по Москве</strong></li>
-                    <li>Новогодняя <strong>экскурсия</strong> по столице с гидом 🎤</li>
-                </ul>
+                @if (config('lend_data.in_price') )
+                    <h2>В цену тура входит:</h2>
+                    {!! config('lend_data.in_price') !!}
+                @endif
+
+                @if ( config('lend_data.dop_price')  )
+                    <h2>За дополнительную плату:</h2>
+                    {!! config('lend_data.dop_price') !!}
+                @endif
+
+
 
                 <h2>Купить тур:</h2>
                 <div class="pay_wrapper">
-                    <tour-price title="Кремлевская ёлка 2025" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode([
-                        // ["price" => 8500, "comment" => "Цена для взрослых (Кремлевская Ёлка 29.12.2024)"],
-                        // ["price" => 9000, "comment" => "Цена для детей + подарок (Кремлевская Ёлка 29.12.2024)"],
-
-                        ["price" => 8500, "comment" => "Цена для взрослых (Кремлевская Ёлка 05.01.2025)"],
-                        ["price" => 9000, "comment" => "Цена для детей + подарок (Кремлевская Ёлка 05.01.2025)"],
-
-                        ["price" => 8000, "comment" => "Для семей участников СВО взрослые 05.01.2025"],
-                        ["price" => 8500, "comment" => "Для семей участников СВО дети + подарок <br>05.01.2025"],
-
-                        ])}}"></tour-price>
+                    <tour-price title="Кремлевская ёлка 2025" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode(config('lend_data.prices'))}}"></tour-price>
                 </div>
 
             </div>

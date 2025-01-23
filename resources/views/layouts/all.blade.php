@@ -30,6 +30,8 @@
         'public/scss/main.scss'
     ])
 
+    <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
         (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -49,11 +51,9 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 <body>
-    <div class="modal_win" id="global_app">
-        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
-    </div>
     <x-menues.side-menu></x-menues.side-menu>
     <main id="main">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
         @yield('main')
     </main>
 </body>
