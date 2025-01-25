@@ -148,7 +148,7 @@
                 @endif
 
                 @if ( config('lend_data.dop_price')  )
-                    <h2>За дополнительную плату:</h2>
+                    <h2>Дополнительная плата  (ориентировочные цены):</h2>
                     {!! config('lend_data.dop_price') !!}
                 @endif
 
