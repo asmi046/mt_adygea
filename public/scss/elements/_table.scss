@@ -20,4 +20,32 @@ table {
     tr:nth-child(2n) td {
         background-color: #EBEBEB;
     }
+
+    &.no_show {
+        border: none;
+        width: unset;
+
+
+        th,td {
+            border: none;
+            padding: 5px 10px;
+        }
+
+        tr:nth-child(2n) td {
+            background-color: white;
+        }
+    }
+}
+
+@media (max-width:480px) {
+    table {
+        &.no_show {
+            font-size: 14px;
+
+            th,td {
+                border: none;
+                padding: 5px;
+            }
+        }
+    }
 }

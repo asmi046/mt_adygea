@@ -145,11 +145,17 @@
         <div class="container text_styles">
             <div class="wrapper" id="price_app">
                 <h2>Даты туров:</h2>
-                <ul>
-                    @foreach (config('lend_data.dates_list') as $item)
-                        <li>{{ $item }}</li>
-                    @endforeach
-                </ul>
+                <table class="no_show">
+                    <tbody>
+                        @foreach (config('lend_data.dates_list') as $item)
+                            <tr>
+                                <td>{{ $item['data'] }}</td>
+                                <td>{{ $item['comment'] }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+
 
 
                 @if (config('lend_data.in_price') )
