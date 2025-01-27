@@ -84,8 +84,23 @@
     }
 
     .tap_headers {
-        .tap_header {
-            font-size: 14px;
+        .tap_wrapper {
+            .tap_header {
+                font-size: 14px;
+                padding: 10px 20px;
+            }
+        }
+
+    }
+
+}
+
+@media (max-width:350px) {
+    .tap_headers {
+        .tap_wrapper {
+            .tap_header {
+                padding: 10px 10px;
+            }
         }
     }
 }
