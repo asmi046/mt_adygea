@@ -33,10 +33,12 @@
             width:46%;
             flex: 1;
             margin: auto 3% auto 0;
+            opacity: 0;
         }
 
         .dop_param {
             flex:1;
+            opacity: 0;
             margin: auto 0;
             position: relative;
             flex-direction: column;
