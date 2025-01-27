@@ -54,7 +54,7 @@ return [
         'Потрясающие виды ' => 'img/adygea_all/snow_3.jpg',
         'Кристально чистый воздух' => 'img/adygea_all/snow_2.jpg',
         'Отличная компания' => 'img/adygea_all/snow_4.jpg',
-        'Древние Азиишские пещеры' => 'img/adygea_all/adygea_location_1.jpg',
+        'Древние Азишские пещеры' => 'img/adygea_all/adygea_location_1.jpg',
         'Паровозик на дне каньона' => 'img/adygea_all/adygea_location_2.jpg',
         'Потрясающие виды' => 'img/adygea_all/adygea_location_3.jpg',
         // 'Описание 4' => 'img/adygea_all/adygea_location_4.jpg',
