@@ -1,8 +1,10 @@
 <template>
     <div class="tap_element">
         <div class="tap_headers">
-            <div @click="selectElement(index)" v-for="(item, index) in props.header" :key="index" :class="{ active: (index == selected) }" class="tap_header">
-                {{ item }}
+            <div class="tap_wrapper">
+                <div @click="selectElement(index)" v-for="(item, index) in props.header" :key="index" :class="{ active: (index == selected) }" class="tap_header">
+                    {{ item }}
+                </div>
             </div>
         </div>
 

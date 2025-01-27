@@ -144,6 +144,34 @@ h1 {
     }
 }
 
+.galery {
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        .palaroid {
+            margin: 0 12px 10px 0;
+        }
+    }
+
+}
+
+
+@media (max-width:480px) {
+    .tour_info {
+
+        .galery {
+            .cards {
+                justify-content: space-between;
+                .palaroid {
+                    width:48%;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+        }
+    }
+}
 
 
 @media (max-width:1280px) {

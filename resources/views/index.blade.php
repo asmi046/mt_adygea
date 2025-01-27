@@ -9,7 +9,7 @@
 @section('description', $description)
 
 @section('main')
-    <section class="banner_video">
+    <section id="global_app" class="banner_video">
         <video autoplay muted loop class="_video">
             <source src="{{ asset('img/video_bg_2.mp4') }}" type="video/mp4">
         </video>
@@ -29,9 +29,9 @@
 
                 <div class=toyr_program>
 
-                    <tap :header="{{ json_encode(["06.03.2025", "07.05.2025"]) }}">
+                    <tap :header="{{ json_encode(["2 дня в Адыгее", "3 дня в Адыгее"]) }}">
                         <template v-slot:body1>
-                                @foreach ( config('lend_data.program')['06.03.2025'] as $step)
+                                @foreach ( config('lend_data.program')['2 дня в Адыгее'] as $step)
                                     <div class="step">
                                         <div class="point"></div>
                                         <span>{{$step}}</span>
@@ -40,7 +40,7 @@
                                 <div class="line"></div>
                         </template>
                         <template v-slot:body2>
-                            @foreach ( config('lend_data.program')['07.05.2025'] as $step)
+                            @foreach ( config('lend_data.program')['3 дня в Адыгее'] as $step)
                                     <div class="step">
                                         <div class="point"></div>
                                         <span>{{$step}}</span>
@@ -112,7 +112,15 @@
     <section id="location" class="location_section">
         <div class="container">
             <h2>{!! config('lend_data.location_header') !!}</h2>
-            <x-moments></x-moments>
+            {{-- <x-moments></x-moments> --}}
+
+            <div class="galery">
+                <div class="cards">
+                    @foreach (config('lend_data.location_photo') as $key => $item)
+                        <x-palaroid :url="asset($item)" :title="$key" :index="$loop->index"></x-palaroid>
+                    @endforeach
+                </div>
+            </div>
         </div>
     </section>
 

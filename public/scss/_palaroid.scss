@@ -5,7 +5,7 @@
     flex-direction: column;
 
     background-color: white;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 0px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
 
     .photo_wrap {
         width: 86%;
@@ -37,25 +37,25 @@
     .palaroid:nth-child(1) {
         transform: rotate(4deg);
         top:0;
-        left:13%;
+        left:7%;
     }
 
     .palaroid:nth-child(2) {
         transform: rotate(-16deg);
         top:0;
-        right:13%;
+        right:7%;
     }
 
     .palaroid:nth-child(3) {
         transform: rotate(-17deg);
         bottom:0;
-        left:13%;
+        left:7%;
     }
 
     .palaroid:nth-child(4) {
         transform: rotate(12deg);
         bottom:0;
-        right:13%;
+        right:7%;
     }
 }
 
@@ -73,13 +73,29 @@
         height: 350px;
         margin: 30px 0;
     }
-    .palaroid {
-        width:150px;
+
+    .page_top_galery .palaroid {
+        width: 160px;
         .photo_wrap {
             height: 100px;
         }
-        .text {
-            font-size: 18px;
+    }
+
+    .galery {
+        .cards {
+            gap:20px;
+            justify-content: space-between;
+            .palaroid {
+                margin: 0;
+                width:46%;
+                .photo_wrap {
+                    height: 100px;
+                }
+                .text {
+                    font-size: 14px;
+                }
+            }
         }
     }
+
 }

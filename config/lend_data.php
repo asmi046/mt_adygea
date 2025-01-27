@@ -11,19 +11,19 @@ return [
         'Приключения для всех' => 'img/bn_present/4.jpg',
     ],
 
-    'dates_list' => ["06.03.2025", "07.05.2025"],
+    'dates_list' => ["06.03.2025 (программа на 2 дня)", "30.04.2025 (программа на 3 дня)", "07.05.2025 (программа на 3 дня)"],
 
     'program' => [
-        "06.03.2025" => [
-            '6 марта — 16:00 выезд из Курска',
-            '7 - 8 марта — 2 незабываемых дня в Адыгее',
-            '9 марта — 12:00 прибытие в Курск',
+        "2 дня в Адыгее" => [
+            '1 день — 16:00 выезд из Курска',
+            '2 дня — программа в Адыгее',
+            '4 день — 12:00 прибытие в Курск',
         ],
 
-        "07.05.2025" => [
-            '7 мая — 16:00 выезд из Курска',
-            '8 - 10 мая — 3 незабываемых дня в Адыгее',
-            '11 мая — 12:00 прибытие в Курск',
+        "3 дня в Адыгее" => [
+            '1 день — 16:00 выезд из Курска',
+            '3 дня — программа в Адыгее',
+            '5 день — 12:00 прибытие в Курск',
         ],
     ],
 
@@ -41,7 +41,7 @@ return [
         'Паровозик на дне каньона' => 'img/adygea_all/adygea_location_2.jpg',
         'Потрясающие виды' => 'img/adygea_all/adygea_location_3.jpg',
         // 'Описание 4' => 'img/adygea_all/adygea_location_4.jpg',
-        'Нереальные впечатления' => 'img/adygea_all/adygea_location_5.jpg',
+        'Нереальные впечатления' => 'img/adygea_all/adygea_location_5.jpg',
         'Фантастические панорамы' => 'img/adygea_all/adygea_location_6.jpg',
         'Неземные виды' => 'img/adygea_all/adygea_location_7.jpg',
         'Яркие эмоции' => 'img/adygea_all/adygea_location_8.jpg',
@@ -52,18 +52,21 @@ return [
         'Орлиная полка' => 'img/adygea_all/adygea_location_13.jpg',
         'Незабываемый тур' => 'img/adygea_all/adygea_location_14.jpg',
         // 'Описание 15' => 'img/adygea_all/adygea_location_15.jpg',
-        'Добрые моменты' => 'img/adygea_all/adygea_location_16.jpg',
+        // 'Добрые моменты' => 'img/adygea_all/adygea_location_16.jpg',
     ],
 
     'program_dey' => [
-        '01' => file_get_contents(public_path('lend_text/tur_program/01.html')),
-        '02' => file_get_contents(public_path('lend_text/tur_program/02.html')),
-        '03' => file_get_contents(public_path('lend_text/tur_program/03.html')),
+        'Выезд из Курска' => "<p>Выезд на комфортабельном автобусе из Курска в Адыгею</p>",
+        'Программа в Адыгее' => file_get_contents(public_path('lend_text/tur_program/02.html')),
+        'Прибытие в Курск' => "<p>Прибытие из Адыгеии в Курск</p>",
     ],
 
     'prices' => [
         ["price" => 18000, "comment" => "Цена для взрослых (06.03.2025)"],
         ["price" => 17000 , "comment" => "Цена для детей до 16 лет (06.03.2025)"],
+
+        ["price" => 21000, "comment" => "Цена для взрослых (30.04.2025)"],
+        ["price" => 20000 , "comment" => "Цена для детей до 16 лет (30.04.2025)"],
 
         ["price" => 21000, "comment" => "Цена для взрослых (07.05.2025)"],
         ["price" => 20000 , "comment" => "Цена для детей до 16 лет (07.05.2025)"],

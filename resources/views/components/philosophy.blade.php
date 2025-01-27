@@ -1,7 +1,7 @@
 <div class="programm_wrapper">
     <div class="dey_element">
         <div class="counter">
-            <div class="inner">
+            <div class="inner inner_big">
                 ❤️
             </div>
         </div>

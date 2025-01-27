@@ -8,12 +8,14 @@ import axios from 'axios'
 import VueAxios from 'vue-axios'
 import { VMaskDirective } from 'v-slim-mask'
 
+
+import fslightbox from 'fslightbox'
+
 import TourPrice from "./components/TourPrice.vue"
 
 const global_app = createApp({
     components:{
         ModalWindow,
-        TourPrice,
         Tap,
     },
     setup() {}
@@ -21,12 +23,27 @@ const global_app = createApp({
 
 global_app.use(VueAxios, axios)
 global_app.directive('mask', VMaskDirective)
-global_app.mount("#main");
+global_app.mount("#global_app");
+
+
+
+const price_app = createApp({
+    components:{
+        TourPrice,
+    },
+    setup() {}
+})
+
+price_app.use(VueAxios, axios)
+price_app.directive('mask', VMaskDirective)
+price_app.mount("#price_app");
+
 
 
 import SideMenu from './menues.js';
 
 let side_menue = new SideMenu('#main_side_menue', '.show_menue_button')
+
 
 import { gsap } from "gsap";
 
@@ -82,7 +99,7 @@ tl.fromTo('header .container',
 )
 
 
-const locations = Array.from(document.querySelectorAll(".location_wrapper .location"))
+const locations = Array.from(document.querySelectorAll("#location .palaroid"))
 locations.forEach((elem) => {
     ScrollTrigger.create({
     trigger: elem,

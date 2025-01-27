@@ -11,19 +11,24 @@
         display: flex;
 
         .counter {
-            width:135px;
-            height:135px;
+            width:85px;
+            height:55px;
+            padding: 10px 20px;
             background-color: white;
-            border-radius: 100px;
+            border-radius: $border_rad;
             display: flex;
             .inner {
-                font-size: 52px;
+                font-size: 16px;
                 font-family: 'Play';
                 font-weight: bold;
                 display: flex;
                 flex-direction: column;
-                text-align: center;
+                text-align: left;
                 margin: auto;
+                &_big {
+                    font-size: 42px;
+                    line-height: 42px;
+                }
                 span {
                     font-size: 20px;
                     text-transform: uppercase;

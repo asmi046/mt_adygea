@@ -29,7 +29,6 @@
         "optimize": "ssh u1731342@31.31.198.62 \"cd www/adygea.mirturizma46.ru && /opt/php/8.1/bin/php artisan optimize\"",
         "optimize_all": "npm run optimize && npm run cache_clear && npm run cache_view && npm run cache_route && npm run cache_config",
         "orchid_user": "ssh u1731342@31.31.198.62 \"cd www/adygea.mirturizma46.ru && /opt/php/8.1/bin/php artisan orchid:admin admin asmi046@gmail.com 123\"",
-
         "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all && npm run chmode"
     },
     "devDependencies": {
@@ -40,6 +39,7 @@
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^5.1.3",
+        "fslightbox": "^3.4.2",
         "gsap": "^3.12.5",
         "v-slim-mask": "^1.0.24",
         "vue-axios": "^3.5.2"

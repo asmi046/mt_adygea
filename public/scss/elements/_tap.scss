@@ -6,15 +6,24 @@
 .tap_headers {
     display: flex;
 
-    .tap_header {
-        padding: 10px 30px;
-        font-size: 14px;
-        cursor: pointer;
-        &.active {
-            border-radius: $border_rad;
-            background-color: $main_color;
+
+    .tap_wrapper {
+        display: flex;
+        background-color: $gray_bg_color;
+        padding: 5px;
+        border-radius: 5px;
+
+        .tap_header {
+            padding: 10px 30px;
+            font-size: 14px;
+            cursor: pointer;
+            &.active {
+                border-radius: $border_rad;
+                background-color: $main_color;
+            }
         }
     }
+
 }
 
 .tap_bodys {
