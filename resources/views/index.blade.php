@@ -149,8 +149,8 @@
                     <tbody>
                         @foreach (config('lend_data.dates_list') as $item)
                             <tr>
-                                <td>{{ $item['data'] }}</td>
-                                <td>{{ $item['comment'] }}</td>
+                                <td>{!! $item['data'] !!}</td>
+                                <td>{!! $item['comment'] !!}</td>
                             </tr>
                         @endforeach
                     </tbody>
