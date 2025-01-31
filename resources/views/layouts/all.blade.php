@@ -23,6 +23,7 @@
     <link rel="icon" type="image/png" href="{{asset('/img/favicons/icon16.png')}}" sizes="16x16">
 
     <meta name="_token" content="{{ csrf_token() }}">
+    <meta name="yandex-verification" content="b4ee04063d8fdee2" />
 
     @vite([
         'resources/css/app.css',
