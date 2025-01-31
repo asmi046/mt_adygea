@@ -81,6 +81,12 @@
         }
     }
 
+    .palaroid {
+        .text {
+            font-size: 18px;
+        }
+    }
+
     .galery {
         .cards {
             gap:20px;
@@ -92,7 +98,7 @@
                     height: 100px;
                 }
                 .text {
-                    font-size: 14px;
+                    font-size: 16px;
                 }
             }
         }
