@@ -70,7 +70,7 @@ export default {
 
                 this.showLoader = false
                 this.showAccept = true;
-                ym(99022196,'reachGoal','send')
+                ym(99715695,'reachGoal','send')
             })
             .catch( (error) => {
                 this.showLoader = false
