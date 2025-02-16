@@ -172,7 +172,7 @@
 
                 <h2>Купить тур:</h2>
                 <div class="pay_wrapper">
-                    <tour-price title="Кремлевская ёлка 2025" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode(config('lend_data.prices'))}}"></tour-price>
+                    <tour-price title="Тур в Адыгею" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode(config('lend_data.prices'))}}"></tour-price>
                 </div>
 
             </div>
