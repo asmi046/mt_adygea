@@ -10,6 +10,7 @@
 
 @section('main')
     <section id="global_app" class="banner_video">
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в ближайшее время"></modal-window>
         <video autoplay muted loop
         poster="{{ asset('img/vide_poster.webp') }}"
         class="_video">
@@ -56,8 +57,11 @@
 
                 </div>
 
+                <div class="btn_wrapper">
+                    <a class="button button_icon yakor" onclick="ym(99715695,'reachGoal','to_pay')" href="#in_tur"><i class="rub_icon"></i><span>Купить тур</span></a>
+                    <a class="button button_icon" href="#showModal"><i class="babl_icon"></i><span>Задать вопрос</span></a>
 
-                <a class="button yakor" href="#program">Программа тура</a>
+                </div>
             </div>
 
             <div class="dop_param page_top_galery">

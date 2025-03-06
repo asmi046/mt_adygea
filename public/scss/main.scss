@@ -126,6 +126,16 @@ h1 {
     background-size: cover;
 }
 
+.babl_icon {
+    display: block;
+    width:20px;
+    height:20px;
+    background-image: url('../img/babl.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .btn_wrapper {
     display: flex;
     gap: 10px;
