@@ -32,7 +32,7 @@
 
                 <div class=toyr_program>
 
-                    <tap :header="{{ json_encode([ "3 дня в Адыгее"]) }}">
+                    <tap :header="{{ json_encode([ "Апрель", "Май", "Июнь" ]) }}">
                         {{-- <template v-slot:body1>
                                 @foreach ( config('lend_data.program')['2 дня в Адыгее'] as $step)
                                     <div class="step">
@@ -43,7 +43,27 @@
                                 <div class="line"></div>
                         </template> --}}
                         <template v-slot:body1>
-                            @foreach ( config('lend_data.program')['3 дня в Адыгее'] as $step)
+                            @foreach ( config('lend_data.program')['Апрель'] as $step)
+                                    <div class="step">
+                                        <div class="point"></div>
+                                        <span>{{$step}}</span>
+                                    </div>
+                            @endforeach
+
+                            <div class="line"></div>
+                        </template>
+                        <template v-slot:body2>
+                            @foreach ( config('lend_data.program')['Май'] as $step)
+                                    <div class="step">
+                                        <div class="point"></div>
+                                        <span>{{$step}}</span>
+                                    </div>
+                            @endforeach
+
+                            <div class="line"></div>
+                        </template>
+                        <template v-slot:body3>
+                            @foreach ( config('lend_data.program')['Июнь'] as $step)
                                     <div class="step">
                                         <div class="point"></div>
                                         <span>{{$step}}</span>
