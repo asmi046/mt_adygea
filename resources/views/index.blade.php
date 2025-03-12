@@ -196,7 +196,8 @@
 
                 <h2>Купить тур:</h2>
                 <div class="pay_wrapper">
-                    <tour-price title="Тур в Адыгею" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode(config('lend_data.prices'))}}"></tour-price>
+                    {{-- <tour-price title="Тур в Адыгею" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode(config('lend_data.prices'))}}"></tour-price> --}}
+                    <tour-price-list title="Тур в Адыгею" img="{{asset('img/bn_present/4.jpg')}}"  :prices="{{json_encode(config('lend_data.prices_dat'))}}"></tour-price-list>
                 </div>
 
             </div>

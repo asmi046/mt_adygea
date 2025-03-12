@@ -108,6 +108,25 @@ return [
 
     ],
 
+    'prices_dat' => [
+
+        "30 апреля" => [
+            ['type' => 'Взрослые', 'price' => 21000],
+            ['type' => 'Дети до 16 лет.', 'price' => 20000],
+        ],
+
+        "7 мая" => [
+            ['type' => 'Взрослые', 'price' => 21000],
+            ['type' => 'Дети до 16 лет.', 'price' => 20000],
+        ],
+
+
+        "11 июня" => [
+            ['type' => 'Взрослые', 'price' => 21000],
+            ['type' => 'Дети до 16 лет.', 'price' => 20000],
+        ]
+    ],
+
     'in_price' => file_get_contents(public_path('lend_text/in_price.html')),
     'dop_price' => file_get_contents(public_path('lend_text/dop_price.html')),
     'like_text' => "<p><strong>Адыгея</strong> — это бесконечный калейдоскоп живописных пейзажей, богатой истории и культуры. Откройте для себя всю красоту и величие потрясающей Адыгеи вместе с <strong>МирТуризма 46</strong>!</p>",

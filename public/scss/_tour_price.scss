@@ -19,6 +19,26 @@
             flex-direction: column;
             max-width: 500px;
 
+            &_list {
+                .field {
+                    width:70%;
+                    label {
+                        font-family: "Play";
+                        font-weight: bold;
+                    }
+                }
+
+                .price {
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    font-size: 28px;
+                    font-family: "Play";
+                    .v{
+                        color:$gold_color;
+                    }
+                }
+            }
+
             .selectors {
                 width:70%;
 
@@ -95,5 +115,12 @@
     .tour_price {
         background-size: 82% 103%;
         background-position: 368% 158px;
+
+
+        &_list {
+            .field {
+                width:unset;
+            }
+        }
     }
 }

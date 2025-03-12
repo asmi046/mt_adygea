@@ -12,6 +12,7 @@ import { VMaskDirective } from 'v-slim-mask'
 import fslightbox from 'fslightbox'
 
 import TourPrice from "./components/TourPrice.vue"
+import TourPriceList from "./components/TourPriceList.vue"
 
 const global_app = createApp({
     components:{
@@ -30,6 +31,7 @@ global_app.mount("#global_app");
 const price_app = createApp({
     components:{
         TourPrice,
+        TourPriceList,
     },
     setup() {}
 })
