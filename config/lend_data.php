@@ -70,10 +70,10 @@ return [
 
     'location_header' => "Лучшие локации Адыгеи",
     'location_photo' => [
-        'Термальные источники' => 'img/adygea_all/snow_1.jpg',
-        'Потрясающие виды ' => 'img/adygea_all/snow_3.jpg',
-        'Кристально чистый воздух' => 'img/adygea_all/snow_2.jpg',
-        'Отличная компания' => 'img/adygea_all/snow_4.jpg',
+        'Красивые пейзажи' => 'img/adygea_all/trava_gori.webp',
+        'Культура ' => 'img/adygea_all/mehet.webp',
+        'Впечатления' => 'img/adygea_all/lubov.webp',
+        'Отличная компания' => 'img/adygea_all/company.webp',
         'Древние Азишские пещеры' => 'img/adygea_all/adygea_location_1.jpg',
         'Паровозик на дне каньона' => 'img/adygea_all/adygea_location_2.jpg',
         'Потрясающие виды' => 'img/adygea_all/adygea_location_3.jpg',
