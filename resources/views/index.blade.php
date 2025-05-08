@@ -52,7 +52,7 @@
 
                             <div class="line"></div>
                         </template> --}}
-                        <template v-slot:body1>
+                        {{-- <template v-slot:body1>
                             @foreach ( config('lend_data.program')['Май'] as $step)
                                     <div class="step">
                                         <div class="point"></div>
@@ -61,7 +61,7 @@
                             @endforeach
 
                             <div class="line"></div>
-                        </template>
+                        </template> --}}
                         <template v-slot:body2>
                             @foreach ( config('lend_data.program')['Июнь'] as $step)
                                     <div class="step">
