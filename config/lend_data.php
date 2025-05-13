@@ -1,9 +1,9 @@
 <?php
 
 return [
-    'h1' => "Тур в Адыгею ⛰️ из Курска <br> Лучшее путешествие весны",
-    'start_price' => "20 000",
-    'dey_count' => "3",
+    'h1' => "Тур в Адыгею ⛰️ из Курска <br> Лучшее путешествие года",
+    'start_price' => "23 000",
+    'dey_count' => "3 дня / 2 ночи",
     'head_photo' => [
         'Яркие эмоции' => 'img/adygea_all/adygea_location_8.jpg',
         'Потрясающие виды' => 'img/bn_present/2.jpg',
