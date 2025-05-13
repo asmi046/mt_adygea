@@ -25,9 +25,9 @@
             <div class="bnr_text">
                 <h1>{!! config('lend_data.h1') !!}</h1>
 
-                <p class="label label_gold">от {{ config('lend_data.start_price') }} ₽</p>
+                <p class="label label_gold">{{ config('lend_data.start_price') }} ₽</p>
 
-                <p class="label label_white">от {{ config('lend_data.dey_count') }} дней</p>
+                <p class="label label_white">{{ config('lend_data.dey_count') }} дней</p>
 
 
                 <div class=toyr_program>
